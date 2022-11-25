@@ -1,7 +1,6 @@
 package com.krysov.tests;
 
 import com.github.javafaker.Faker;
-
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
