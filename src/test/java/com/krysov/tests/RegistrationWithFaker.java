@@ -1,15 +1,11 @@
 package com.krysov.tests;
 
-import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
 import static com.krysov.tests.TestData.*;
 
 public class RegistrationWithFaker extends com.krysov.tests.TestBase {
     @Test
     void successfulRegistrationTest() {
-
-
-
         registrationPage.openPage()
                 .setFirstName(name)
                 .setLastName(lastName)
@@ -32,6 +28,5 @@ public class RegistrationWithFaker extends com.krysov.tests.TestBase {
                 .verifyResult("Date of Birth", dayBirth+" "+ monthBirth+","+yearBirth)
                 .verifyResult("State and City", State+ " "+City)
                 .verifyResult("Subjects", Subjects);
-
     }
 }

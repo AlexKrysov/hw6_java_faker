@@ -6,7 +6,6 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 
 public class TestData {
-
     public static Faker faker = new Faker();
     public static String name = faker.name().firstName();
     public static String lastName = faker.name().lastName();
