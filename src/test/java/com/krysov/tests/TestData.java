@@ -8,9 +8,9 @@ public class TestData {
     public static Faker faker = new Faker();
     public static String name = faker.name().firstName();
     public static String lastName = faker.name().lastName();
-    public static String Email = faker.internet().emailAddress();
-    public static String CurrentAddress = faker.address().fullAddress();
-    public static String Mobile = faker.phoneNumber().subscriberNumber(10);
+    public static String email = faker.internet().emailAddress();
+    public static String currentAddress = faker.address().fullAddress();
+    public static String mobile = faker.phoneNumber().subscriberNumber(10);
     public static SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMMM yyyy", Locale.ENGLISH);
     public static String[] date = dateFormat.format(faker.date().birthday()).split(" ");
     public static String dayBirth = date[0];
@@ -19,9 +19,9 @@ public class TestData {
     public static
     String
             gender = "Other",
-            Subjects = "biology",
-            Hobbies = "Sports",
-            Picture = "img/1.png",
-            State = "NCR",
-            City = "Delhi";
+            subjects = "biology",
+            hobbies = "Sports",
+            picture = "img/1.png",
+            state = "NCR",
+            city = "Delhi";
 }
